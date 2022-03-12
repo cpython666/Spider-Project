@@ -10,7 +10,7 @@ def get_video():
             }
     url='https://v.huya.com/g/Dance'
     v_ids=[]
-    for page in range(1,6):
+    for page in range(1,2):
         params={
             'set_id':'51',
             'order':'mostplay',
