@@ -38,6 +38,7 @@ class Html2Proxies(object):
                             sleep(30)
                         else:
                             break
+            print('数据已爬取完毕')
             break
 
 if __name__ =="__main__":

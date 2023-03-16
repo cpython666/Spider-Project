@@ -56,19 +56,24 @@ parserList = [
     #     'position': {'ip': './td[1]', 'port': './td[2]', 'type': '', 'protocol': ''}
     #
     # },
-    # {
-    #     'urls': ['http://www.kuaidaili.com/proxylist/%s/' % n for n in range(1, 11)],
-    #     'type': 'xpath',
-    #     'pattern': ".//*[@id='index_free_list']/table/tbody/tr[position()>0]",
-    #     'position': {'ip': './td[1]', 'port': './td[2]', 'type': './td[3]', 'protocol': './td[4]'}
-    # },
-    # {
-    #     'urls': ['http://www.kuaidaili.com/free/%s/%s/' % (m, n) for m in ['inha', 'intr', 'outha', 'outtr'] for n in
-    #              range(1, 11)],
-    #     'type': 'xpath',
-    #     'pattern': ".//*[@id='list']/table/tbody/tr[position()>0]",
-    #     'position': {'ip': './td[1]', 'port': './td[2]', 'type': './td[3]', 'protocol': './td[4]'}
-    # },
+    # https://www.kuaidaili.com/proxylist/1
+    # //*[@id="freelist"]/table
+    {
+        'urls': ['http://www.kuaidaili.com/proxylist/%s/' % n for n in range(1, 11)],
+        'type': 'xpath',
+        'pattern': ".//*[@id='freelist']/table/tbody/tr[position()>0]",
+        'position': {'ip': './td[1]', 'port': './td[2]', 'type': './td[3]', 'protocol': './td[4]'}
+    },
+# https://www.kuaidaili.com/free/inha/1
+# //*[@id="list"]/table
+    {
+        'urls': ['http://www.kuaidaili.com/free/%s/%s/' % (m, n) for m in ['inha', 'intr', 'outha', 'outtr'] for n in
+                 range(1, 31)],
+        'type': 'xpath',
+        'pattern': ".//*[@id='list']/table/tbody/tr[position()>0]",
+        'position': {'ip': './td[1]', 'port': './td[2]', 'type': './td[3]', 'protocol': './td[4]'}
+    },
+
     # {
     #     'urls': ['http://www.cz88.net/proxy/%s' % m for m in
     #              ['index.shtml'] + ['http_%s.shtml' % n for n in range(2, 11)]],
