@@ -14,11 +14,11 @@ class Html2Proxies(object):
         :param redis: 接受一个redishelper对象用来实时存储代理
         :return: 无返回值
         '''
-        while True:
+        redis = RedisHelper()
+        # 每次运行项目先清理掉之前项目运行的代理
+        redis.clear()
 
-            redis=RedisHelper()
-            # 每次运行项目先清理掉之前项目运行的代理
-            redis.clear()
+        while True:
             for parser in config.parserList:
                 for url in parser['urls']:
                     response=Html_Downloader.download(url)
@@ -39,7 +39,7 @@ class Html2Proxies(object):
                         else:
                             break
             print('数据已爬取完毕')
-            break
+            # break
 
 if __name__ =="__main__":
     print(Html2Proxies.getProxiesList())
