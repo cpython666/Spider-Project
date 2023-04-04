@@ -14,7 +14,7 @@ ip，端口，类型(0高匿名，1透明)，protocol(0 http,1 https),country(�
 parserList = [
     {
         # http://www.66ip.cn/1.html
-        'urls': ['http://www.66ip.cn/%s.html' % n for n in ['index'] + list(range(2, 50))],
+        'urls': ['http://www.66ip.cn/%s.html' % n for n in ['index'] + list(range(2, 800))],
         'type': 'xpath',
         'pattern': ".//*[@id=\"main\"]/div[1]/div[2]/div[1]/table/tr[position()>1]",
         'position': {'ip': './td[1]', 'port': './td[2]', 'type': './td[4]', 'protocol': ''}
@@ -166,11 +166,27 @@ DB_CONFIG = {
 
     'DB_CONNECT_TYPE': 'redis',
     'redis':{
+        # 'HOST': '121.41.107.144',
+        # 'PORT': 6379,
+        # 'DB': 1,
+        # 'PASSWORD': None,
+        # 'REDIS_KEY': 'proxies'
+
         'HOST': 'localhost',
         'PORT': 6379,
         'DB': 1,
-        'PASSWORD':None,
-        'REDIS_KEY':'proxies'
+        'PASSWORD': None,
+        'REDIS_KEY': 'proxies'
+
+        # 39.101.74.109:18821
+
+        # 'HOST': '39.101.74.109',
+        # 'PORT': 6379,
+        # # 'PORT': 18821,
+        # 'DB': 1,
+        # 'PASSWORD': 'Wa2.?',
+        # 'REDIS_KEY': 'proxies'
+
     }
 
 }
