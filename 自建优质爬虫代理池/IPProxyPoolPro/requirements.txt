@@ -1,0 +1,5 @@
+chardet==5.1.0
+Flask==2.1.1
+lxml==4.6.4
+redis==4.2.1
+requests==2.26.0
