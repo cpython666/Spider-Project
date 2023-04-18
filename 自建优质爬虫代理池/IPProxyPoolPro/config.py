@@ -172,20 +172,20 @@ DB_CONFIG = {
         # 'PASSWORD': None,
         # 'REDIS_KEY': 'proxies'
 
-        'HOST': 'localhost',
-        'PORT': 6379,
-        'DB': 1,
-        'PASSWORD': None,
-        'REDIS_KEY': 'proxies'
+        # 'HOST': 'localhost',
+        # 'PORT': 6379,
+        # 'DB': 1,
+        # 'PASSWORD': None,
+        # 'REDIS_KEY': 'proxies'
 
         # 39.101.74.109:18821
 
-        # 'HOST': '39.101.74.109',
-        # 'PORT': 6379,
-        # # 'PORT': 18821,
-        # 'DB': 1,
-        # 'PASSWORD': 'Wa2.?',
-        # 'REDIS_KEY': 'proxies'
+        'HOST': '39.101.74.109',
+        'PORT': 6379,
+        # 'PORT': 18821,
+        'DB': 1,
+        'PASSWORD': 'Wa2.?0.2.3!',
+        'REDIS_KEY': 'proxies'
 
     }
 
