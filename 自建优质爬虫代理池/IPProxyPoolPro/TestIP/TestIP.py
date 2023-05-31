@@ -2,6 +2,7 @@ from IPProxyPoolPro.db.RedisHelper import RedisHelper
 import random
 from IPProxyPoolPro.utils.checkProxies import doProxy
 from time import sleep
+
 class TestIP(object):
     def __init__(self):
         self.redisHelper=RedisHelper()

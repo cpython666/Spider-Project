@@ -152,7 +152,8 @@ def get_header():
 
 TEST_URL = 'http://ip.chinaz.com/getip.aspx'
 # 获取请求网站ip接口
-TEST_IP = 'http://httpbin.org/ip'
+TEST_IP = 'https://cn.bing.com/search?q=1'
+# TEST_IP = 'http://httpbin.org/ip'
 # http请求验证接口
 TEST_HTTP_HEADER = 'http://httpbin.org/get'
 # https请求验证接口
@@ -172,20 +173,20 @@ DB_CONFIG = {
         # 'PASSWORD': None,
         # 'REDIS_KEY': 'proxies'
 
-        # 'HOST': 'localhost',
-        # 'PORT': 6379,
-        # 'DB': 1,
-        # 'PASSWORD': None,
-        # 'REDIS_KEY': 'proxies'
+        'HOST': 'localhost',
+        'PORT': 6379,
+        'DB': 1,
+        'PASSWORD': None,
+        'REDIS_KEY': 'proxies'
 
         # 39.101.74.109:18821
 
-        'HOST': '39.101.74.109',
-        'PORT': 6379,
-        # 'PORT': 18821,
-        'DB': 1,
-        'PASSWORD': 'Wa2.?0.2.3!',
-        'REDIS_KEY': 'proxies'
+        # 'HOST': '39.101.74.109',
+        # 'PORT': 6379,
+        # # 'PORT': 18821,
+        # 'DB': 1,
+        # 'PASSWORD': 'Wa2.?0.2.3!',
+        # 'REDIS_KEY': 'proxies'
 
     }
 
