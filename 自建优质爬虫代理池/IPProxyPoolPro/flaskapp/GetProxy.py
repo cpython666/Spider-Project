@@ -13,6 +13,7 @@ def hello():
         return ls
     else:
         return '数据库暂时没有代理，爬虫板块加班中，稍等一下吧~~~'
+
 @app.route("/all")
 def all():
     if redisHelper.count()>0:
