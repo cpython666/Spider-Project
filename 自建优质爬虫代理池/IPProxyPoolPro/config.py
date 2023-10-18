@@ -167,7 +167,7 @@ DB_CONFIG = {
 
     'DB_CONNECT_TYPE': 'redis',
     'redis':{
-        # 'HOST': '121.41.107.144',
+        # 'HOST': '121.41.***.***',
         # 'PORT': 6379,
         # 'DB': 1,
         # 'PASSWORD': None,
@@ -181,11 +181,11 @@ DB_CONFIG = {
 
         # 39.101.74.109:18821
 
-        # 'HOST': '39.101.74.109',
+        # 'HOST': '39.101.74.***',
         # 'PORT': 6379,
         # # 'PORT': 18821,
         # 'DB': 1,
-        # 'PASSWORD': 'Wa2.?0.2.3!',
+        # 'PASSWORD': '***',
         # 'REDIS_KEY': 'proxies'
 
     }
