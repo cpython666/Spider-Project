@@ -12,20 +12,20 @@ TIMEOUT=3
 ip，端口，类型(0高匿名，1透明)，protocol(0 http,1 https),country(国家),area(省市),updatetime(更新时间),speed(连接速度)
 '''
 parserList = [
-    {
-        # http://www.66ip.cn/1.html
-        'urls': ['http://www.66ip.cn/%s.html' % n for n in ['index'] + list(range(2, 800))],
-        'type': 'xpath',
-        'pattern': ".//*[@id=\"main\"]/div[1]/div[2]/div[1]/table/tr[position()>1]",
-        'position': {'ip': './td[1]', 'port': './td[2]', 'type': './td[4]', 'protocol': ''}
-    },
+    # {
+    #     # http://www.66ip.cn/1.html
+    #     'urls': ['http://www.66ip.cn/%s.html' % n for n in ['index'] + list(range(2, 800))],
+    #     'type': 'xpath',
+    #     'pattern': ".//*[@id=\"main\"]/div[1]/div[2]/div[1]/table/tr[position()>1]",
+    #     'position': {'ip': './td[1]', 'port': './td[2]', 'type': './td[4]', 'protocol': ''}
+    # },
         # http://www.66ip.cn/areaindex_1/1.html
-    {
-        'urls': ['http://www.66ip.cn/areaindex_%s/%s.html' % (m, n) for m in range(1, 35) for n in range(1, 10)],
-        'type': 'xpath',
-        'pattern': ".//*[@id='footer']/div/table/tr[position()>1]",
-        'position': {'ip': './td[1]', 'port': './td[2]', 'type': './td[4]', 'protocol': ''}
-    },
+    # {
+    #     'urls': ['http://www.66ip.cn/areaindex_%s/%s.html' % (m, n) for m in range(1, 35) for n in range(1, 10)],
+    #     'type': 'xpath',
+    #     'pattern': ".//*[@id='footer']/div/table/tr[position()>1]",
+    #     'position': {'ip': './td[1]', 'port': './td[2]', 'type': './td[4]', 'protocol': ''}
+    # },
     # {
     #     'urls': ['http://cn-proxy.com/', 'http://cn-proxy.com/archives/218'],
     #     'type': 'xpath',
@@ -59,6 +59,7 @@ parserList = [
     # https://www.kuaidaili.com/proxylist/1
     # //*[@id="freelist"]/table
     {
+# https://www.kuaidaili.com/ops/proxylist/10/
         'urls': ['http://www.kuaidaili.com/proxylist/%s/' % n for n in range(1, 11)],
         'type': 'xpath',
         'pattern': ".//*[@id='freelist']/table/tbody/tr[position()>0]",
