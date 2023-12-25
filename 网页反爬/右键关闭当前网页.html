@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<body>
+右键关闭当前网页
+<script>
+document.oncontextmenu = function () {
+    window.opener=null;window.open('','_self');
+    window.close();
+    event.returnValue = false;
+}
+</script>
+</body>

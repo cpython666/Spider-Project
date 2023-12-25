@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字闪烁特效</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		#myDiv{
+			width: 100vw;
+			height: 100vh;
+		}
+	</style>
+</head>
+<body>
+	<div id="myDiv">派森斗罗</div>
+<script>
+    var flag = 0;
+    var int = '';
+    function start() {
+        var text = document.getElementById("myDiv");
+        const colors = ['#FF0000', '#FFA500', '#FFFF00', '#008000', '#00FFFF', '#0000FF', '#800080'];
+        const randomIndex = Math.floor(Math.random() * colors.length);
+        const randomColor = colors[randomIndex];
+        text.style.background = randomColor
+        int = setTimeout("start()", 50);
+    }
+    document.oncontextmenu = function () {
+        start();
+        event.returnValue = false;
+    }
+</script>
+</body>
+</html>
+

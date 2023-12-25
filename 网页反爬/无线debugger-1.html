@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<body>
+无限debugger
+<script>
+    function check() {
+        debugger;
+        setTimeout(check, 1);
+    }
+    check();
+</script>
+</body>
